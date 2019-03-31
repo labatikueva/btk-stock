@@ -5,7 +5,7 @@ main.btk-main {
 
   @include flexbox(column, flex-start, flex-start);
 
-  background-color: transparent;
+  background-color: $btk-color-black;
 
   padding: $btk-gap;
   margin: 0;
