@@ -1,0 +1,107 @@
+@mixin btk-xs {
+  @media screen and (max-width: $btk-xs-max) {
+    @content;
+  }
+}
+
+@mixin btk-sm {
+  @media screen and (min-width: $btk-sm-min) and (max-width: $btk-sm-max) {
+    @content;
+  }
+}
+
+@mixin btk-md {
+  @media screen and (min-width: $btk-md-min) and (max-width: $btk-md-max) {
+    @content;
+  }
+}
+
+@mixin btk-lg {
+  @media screen and (min-width: $btk-lg-min) and (max-width: $btk-lg-max) {
+    @content;
+  }
+}
+
+@mixin btk-xl {
+  @media screen and (min-width: $btk-xl-min) {
+    @content;
+  }
+}
+
+
+@mixin btk-xs-up {
+  @media screen {
+    @content;
+  }
+}
+
+@mixin btk-sm-up {
+  @media screen and (min-width: $btk-sm-min) {
+    @content;
+  }
+}
+
+@mixin btk-md-up {
+  @media screen and (min-width: $btk-md-min) {
+    @content;
+  }
+}
+
+@mixin btk-lg-up {
+  @media screen and (min-width: $btk-lg-min) {
+    @content;
+  }
+}
+
+@mixin btk-xl-up {
+  @media screen and (min-width: $btk-xl-min) {
+    @content;
+  }
+}
+
+
+@mixin btk-xs-down {
+  @media screen and (max-width: $btk-xs-max) {
+    @content;
+  }
+}
+
+@mixin btk-sm-down {
+  @media screen and (max-width: $btk-sm-max) {
+    @content;
+  }
+}
+
+@mixin btk-md-down {
+  @media screen and (max-width: $btk-md-max) {
+    @content;
+  }
+}
+
+@mixin btk-lg-down {
+  @media screen and (max-width: $btk-lg-max) {
+    @content;
+  }
+}
+
+@mixin btk-xl-down {
+  @media screen {
+    @content;
+  }
+}
+
+
+@mixin btk-media-down {
+  @include btk-sm-down() {
+    @content;
+  }
+}
+
+@mixin btk-media-up {
+  @include btk-md-up() {
+    @content;
+  }
+}
+
+
+

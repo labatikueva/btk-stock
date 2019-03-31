@@ -1,0 +1,62 @@
+$btk-organization-banner-width: 400px !default;
+$btk-organization-banner-height: 80px !default;
+
+.btk-book-header {
+  width: 100%;
+  text-align: center;
+
+  @include btk-md-up() {
+    max-width: $btk-md-min;
+    margin: 0 auto;
+  }
+
+  .btk-organization-logo {
+    max-width: $btk-organization-banner-width;
+    max-height: $btk-organization-banner-height;
+  }
+
+  .btk-description {
+    text-align: justify;
+  }
+}
+
+.btk-book-content {
+  @include flexbox(column, flex-start, flex-start);
+
+  @include btk-md-up() {
+    max-width: $btk-md-min;
+    margin: 0 auto;
+  }
+
+  width: 100%;
+
+  .btk-chapters {
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    .btk-chapter {
+      width: 100%;
+
+      .btk-chapter-description {
+        width: 100%;
+        min-height: $btk-gap-x6;
+
+        margin: 0;
+        padding: 0;
+
+        .btk-chapter-image {
+          float: left;
+          margin: 0;
+          max-width: $btk-gap-x6;
+          max-height: $btk-gap-x6;
+        }
+      }
+
+    }
+  }
+
+}

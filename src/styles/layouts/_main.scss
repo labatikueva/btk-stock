@@ -1,0 +1,30 @@
+$btk-main-height-media-up:   calc(100% - #{$btk-header-height} - #{$btk-footer-height-media-up});
+$btk-main-height-media-down: calc(100% - #{$btk-header-height} - #{$btk-footer-height-media-down});
+
+main.btk-main {
+
+  @include flexbox(column, flex-start, flex-start);
+
+  background-color: transparent;
+
+  padding: $btk-gap;
+  margin: 0;
+
+  width:     100vw;
+  min-width: 100vw;
+
+  position: relative;
+
+  @include btk-media-up() {
+    min-height: $btk-main-height-media-up;
+  }
+  @include btk-media-down() {
+    min-height: $btk-main-height-media-down;
+  }
+
+}
+
+.btk-main-container {
+  @extend .btk-container;
+  @include flexbox(column, flex-start, center);
+}

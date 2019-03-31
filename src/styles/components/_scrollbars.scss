@@ -1,0 +1,22 @@
+$btk-scrollbar-color: darken($btk-color-grey, 30%) !default;
+$btk-scrollbar-width: 5px !default;
+
+* {
+  &::-webkit-scrollbar {
+    width: $btk-scrollbar-width;
+  }
+
+  &::-webkit-scrollbar-thumb:vertical {
+    background-color: $btk-scrollbar-color;
+    border-radius: $btk-scrollbar-width;
+  }
+
+  &::-webkit-scrollbar-button:start:decrement,
+  &::-webkit-scrollbar-button:end:increment {
+    display: none;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}

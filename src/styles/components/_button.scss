@@ -1,0 +1,18 @@
+button {
+  margin: 0;
+  padding: ($btk-gap-d3 * 2) $btk-gap;
+
+  text-align: center;
+
+  color: $btk-color-white;
+  background-color: $btk-color-complementary;
+
+  border: none;
+  border-radius: $btk-gap-d4;
+
+  cursor: pointer;
+
+  &:hover  { background-color: darken($btk-color-complementary,  5%) }
+  &:focus  { background-color: darken($btk-color-complementary, 10%) }
+  &:active { background-color: darken($btk-color-complementary, 20%) }
+}

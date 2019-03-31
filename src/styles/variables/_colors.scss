@@ -1,0 +1,16 @@
+$btk-color-primary:        #0B465D !default;
+$btk-color-complementary:  #FF5B81 !default;
+$btk-color-info:           #3498DB !default;
+
+$btk-color-success:        #5CB85C !default;
+$btk-color-warning:        #F39C12 !default;
+$btk-color-danger:         #D9534F !default;
+$btk-color-broken:         #651621 !default;
+
+$btk-color-white:          #FEFEFE !default;
+$btk-color-grey:           #ECF0F1 !default;
+
+$btk-color-disabled:       darken($btk-color-grey, 15.0%) !default;
+$btk-color-background:     lighten($btk-color-grey, 5.5%) !default;
+
+$btk-color-separator:      darken($btk-color-grey, 2.5%) !default;

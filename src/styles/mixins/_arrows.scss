@@ -1,0 +1,35 @@
+@mixin arrow-top($horizontal-position, $length, $margin, $background-color, $border-color, $z-index) {
+  position: absolute;
+  top: calc(100% + #{$length});
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+  }
+  &:before {
+    top: 0 - $length;
+    border: $length solid;
+    border-color: $border-color transparent;
+    z-index: $z-index + 1;
+    #{$horizontal-position}: $margin;
+  }
+  &:after {
+    top: 1.5 - $length;
+    border: $length solid;
+    border-color: $background-color transparent;
+    z-index: $z-index + 2;
+    #{$horizontal-position}: $margin;
+  }
+  &:before, &:after {
+    border-top-width: 0;
+  }
+}
+
+@mixin arrow-top-right($length, $margin-right, $background-color, $border-color, $z-index) {
+  @include arrow-top(right, $length, $margin-right, $background-color, $border-color, $z-index)
+}
+
+@mixin arrow-top-left($length, $margin-left, $background-color, $border-color, $z-index) {
+  @include arrow-top(left, $length, $margin-left, $background-color, $border-color, $z-index)
+}

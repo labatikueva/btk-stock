@@ -4,6 +4,8 @@
   "description": "Control de Stock para Productos de la BTK",
   "main": "index.js",
   "scripts": {
+    "build": "webpack --config config/webpack.config.production.js",
+    "start": "webpack-dev-server --config config/webpack.config.development.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,24 @@
   "bugs": {
     "url": "https://github.com/labatikueva/btk-stock/issues"
   },
-  "homepage": "https://github.com/labatikueva/btk-stock#readme"
+  "homepage": "https://github.com/labatikueva/btk-stock#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^2.0.1",
+    "copy-webpack-plugin": "^5.0.2",
+    "css-loader": "^2.1.1",
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1"
+  }
 }

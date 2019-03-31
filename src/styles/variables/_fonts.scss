@@ -1,0 +1,27 @@
+$fa-font-path: '~font-awesome/fonts'       !default;
+@import '~font-awesome/scss/font-awesome';
+
+@import url('//fonts.googleapis.com/css?family=Lato:400,700|Nunito:400,700,800');
+
+$btk-font-family:                  'Lato', 'Sans-Serif'    !default;
+$btk-font-family-kids:             'Nunito', 'Sans-Serif'  !default;
+
+$btk-font-size:                    17px  !default;
+$btk-line-height:                  1.8   !default;
+
+$btk-font-weight-normal:           400   !default;
+$btk-font-weight-bold:             700   !default;
+$btk-font-weight-extra-bold:       800   !default;
+
+$btk-font-weight-kids-normal:      400   !default;
+$btk-font-weight-kids-bold:        700   !default;
+$btk-font-weight-kids-extra-bold:  800   !default;
+
+$btk-font-color:    $btk-color-primary   !default;
+
+$btk-font-size-huge:    2.50em;
+$btk-font-size-bigger:  2.00em;
+$btk-font-size-big:     1.66em;
+$btk-font-size-normal:  1.00em;
+$btk-font-size-small:   0.87em;
+$btk-font-size-smaller: 0.80em;

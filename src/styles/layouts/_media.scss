@@ -1,0 +1,20 @@
+.btk-hidden-xs-up { @include btk-xs-up() { display: none }}
+.btk-hidden-sm-up { @include btk-sm-up() { display: none }}
+.btk-hidden-md-up { @include btk-md-up() { display: none }}
+.btk-hidden-lg-up { @include btk-lg-up() { display: none }}
+.btk-hidden-xl-up { @include btk-xl-up() { display: none }}
+
+.btk-hidden-xs-down { @include btk-xs-down() { display: none }}
+.btk-hidden-sm-down { @include btk-sm-down() { display: none }}
+.btk-hidden-md-down { @include btk-md-down() { display: none }}
+.btk-hidden-lg-down { @include btk-lg-down() { display: none }}
+.btk-hidden-xl-down { @include btk-xl-down() { display: none }}
+
+.btk-container {
+  width: 100%;
+
+  @include btk-xl-up() {
+    max-width: $btk-xl-min;
+    margin: 0 auto;
+  }
+}

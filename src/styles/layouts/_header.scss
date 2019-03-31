@@ -1,0 +1,21 @@
+$btk-header-height: 80px !default;
+$btk-header-z-index: 999 !default;
+
+header.btk-header {
+
+  background-color: transparent;
+
+  padding: $btk-gap;
+  margin: 0;
+
+  width:     100vw;
+  min-width: 100vw;
+
+  height:     $btk-header-height;
+  min-height: $btk-header-height;
+
+  position: relative;
+
+  border-bottom: 1px solid $btk-color-separator;
+
+}
