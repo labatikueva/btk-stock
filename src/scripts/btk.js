@@ -1,6 +1,14 @@
+import angular from 'angular';
+
 import './components/components';
 import './btk-components/btk-components';
 
-var btk = {} || btk;
+function requireAll(dependency) {
+  dependency.keys().forEach(dependency);
+}
 
-export default btk;
+requireAll(require.context('../views', true, /\.html$/));
+
+angular.module('btk', []);
+
+requireAll(require.context('./btk', true, /\.js$/));

@@ -52,7 +52,15 @@ module.exports = {
             }
           ]
         },
-
+        {
+          test: /views\/.*\.html$/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: { name: '[name].[ext]', outputPath: 'views/', publicPath: '../views' }
+            }
+          ]
+        }
       ]
     }
   }
