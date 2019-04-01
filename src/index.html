@@ -31,13 +31,12 @@
       <nav class="btk-breadcrumb">
         <ul class="btk-breadcrumb-list">
           <li class="btk-breadcrumb-item">
-            <a href="" class="btk-brand">
+            <a ui-sref="home" class="btk-brand">
               <img class="btk-hidden-sm-down" src="/images/logo/BTK-Logo.png" alt="La Batikueva">
               <img class="btk-hidden-md-up  " src="/images/logo/BTK-Logo-Large.png" alt="La Batikueva">
             </a>
           </li>
-          <li class="btk-breadcrumb-item"><a href="">Title</a></li>
-          <li class="btk-breadcrumb-item"><a href="">Item</a></li>
+          <li class="btk-breadcrumb-item"><a ui-sref="productos">Productos</a></li>
           <li class="btk-breadcrumb-item"><a href="">Sub Item</a></li>
         </ul>
       </nav>
@@ -58,9 +57,7 @@
   </header>
 
   <main class="btk-main">
-    <div class="btk-main-container">
-      <products-list></products-list>
-    </div>
+    <div class="btk-main-container" ui-view></div>
   </main>
 
   <footer class="btk-footer">

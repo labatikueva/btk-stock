@@ -1,0 +1,23 @@
+<input type="text" placeholder="Nombre del Producto" ng-model="search">
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Categoría</th>
+      <th>Precio Compra</th>
+      <th>Precio Venta</th>
+      <th>Stock</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="producto in $ctrl.productos | filter:search | orderBy:'name'">
+      <td>{{ producto.nombre }}</td>
+      <td>{{ producto.categoria }}</td>
+      <td>{{ producto.precio_compra }}</td>
+      <td>{{ producto.precio_venta }}</td>
+      <td>{{ producto.stock }}</td>
+    </tr>
+  </tbody>
+</table>
+</ul>

@@ -53,11 +53,11 @@ module.exports = {
           ]
         },
         {
-          test: /views\/.*\.html$/,
+          test: /domain.*\.html$/,
           use: [
             {
               loader: 'file-loader',
-              options: { name: '[name].[ext]', outputPath: 'views/', publicPath: '../views' }
+              options: { name: '[name].[ext]' }
             }
           ]
         }
